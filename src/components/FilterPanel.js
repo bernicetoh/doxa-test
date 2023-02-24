@@ -17,12 +17,21 @@ function FilterPanel({ setSelected }) {
   const [isTop, setIsTop] = useState(false);
 
   const changeFilter = (filter) => {
-    if (filter === "hot") {
-      setSelected("hot");
+    if (filter === "top") {
+      setSelected("top");
+      setIsTop(true);
+      setIsHot(false);
+      setIsNew(false);
     } else if (filter === "new") {
       setSelected("new");
+      setIsNew(true);
+      setIsHot(false);
+      setIsTop(false);
     } else {
-      setSelected("top");
+      setSelected("hot");
+      setIsNew(false);
+      setIsHot(true);
+      setIsTop(false);
     }
   };
 
@@ -35,18 +44,64 @@ function FilterPanel({ setSelected }) {
   return (
     <div className="filterpanel">
       <div className="filterpanel-container">
-        <button onClick={() => changeFilter("hot")} name="hot">
-          <FontAwesomeIcon icon={faFire} className="icon" />
-          <p>Hot</p>
-        </button>
-        <button name="new" onClick={() => changeFilter("new")}>
-          <FontAwesomeIcon icon={faWandSparkles} className="icon" />
-          <p>New</p>
-        </button>
-        <button name="top" onClick={() => changeFilter("top")}>
-          <FontAwesomeIcon icon={faLongArrowAltUp} className="icon" />
-          <p>Top</p>
-        </button>
+        {isHot ? (
+          <button
+            onClick={() => changeFilter("hot")}
+            name="hot"
+            className="active-btn"
+          >
+            <FontAwesomeIcon icon={faFire} className="icon" />
+            <p>Hot</p>
+          </button>
+        ) : (
+          <button
+            onClick={() => changeFilter("hot")}
+            name="hot"
+            className="inactive-btn"
+          >
+            <FontAwesomeIcon icon={faFire} className="icon" />
+            <p>Hot</p>
+          </button>
+        )}
+
+        {isNew ? (
+          <button
+            onClick={() => changeFilter("new")}
+            name="new"
+            className="active-btn"
+          >
+            <FontAwesomeIcon icon={faWandMagicSparkles} className="icon" />
+            <p>New</p>
+          </button>
+        ) : (
+          <button
+            onClick={() => changeFilter("new")}
+            name="new"
+            className="inactive-btn"
+          >
+            <FontAwesomeIcon icon={faWandMagicSparkles} className="icon" />
+            <p>New</p>
+          </button>
+        )}
+        {isTop ? (
+          <button
+            onClick={() => changeFilter("top")}
+            name="top"
+            className="active-btn"
+          >
+            <FontAwesomeIcon icon={faLongArrowAltUp} className="icon" />
+            <p>Top</p>
+          </button>
+        ) : (
+          <button
+            onClick={() => changeFilter("top")}
+            name="top"
+            className="inactive-btn"
+          >
+            <FontAwesomeIcon icon={faLongArrowAltUp} className="icon" />
+            <p>Top</p>
+          </button>
+        )}
       </div>
     </div>
   );

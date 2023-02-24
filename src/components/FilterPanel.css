@@ -11,7 +11,7 @@
   padding: 15px 15px;
 }
 
-button {
+.inactive-btn {
   height: 40px;
   width: 90px;
   display: flex;
@@ -25,6 +25,19 @@ button {
   position: relative;
 }
 
+.active-btn {
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  border: transparent;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+}
 button:hover {
   cursor: pointer;
   background-color: lightgrey;
