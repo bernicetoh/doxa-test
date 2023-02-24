@@ -1,0 +1,86 @@
+.thread-container {
+  display: flex;
+  margin: 0px 10px;
+  align-items: center;
+  width: 100vh;
+  justify-content: center;
+  height: 120px;
+  background-color: transparent;
+  border-bottom: 0.5px solid black;
+  position: relative;
+}
+
+.thread-container:hover {
+  cursor: pointer;
+}
+
+.text-container {
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  padding: 5px 15px;
+  background-color: transparent;
+}
+
+.score-container {
+  display: flex;
+  /* height: 20vh; */
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  width: 35px;
+  background-color: transparent;
+}
+
+.fa-solid {
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.fa-solid:hover {
+  color: coral;
+}
+
+h2 {
+  font-size: 15px;
+  background-color: transparent;
+}
+
+p {
+  color: black;
+  background-color: transparent;
+}
+
+.title-text {
+  margin-bottom: 0px;
+}
+
+.created-text {
+  position: relative;
+  margin-top: 20px;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.comments-container {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: bold;
+  position: absolute;
+  top: 85px;
+}
+
+.fa-message {
+  padding-right: 10px;
+  background-color: transparent;
+}
