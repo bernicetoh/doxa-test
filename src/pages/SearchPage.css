@@ -3,6 +3,12 @@
   display: flex;
 }
 
+.filterpanel-container {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
 .scrollview-container {
   display: flex;
   position: absolute;

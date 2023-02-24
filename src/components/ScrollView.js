@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Thread from "./Thread";
 import "./ScrollView.css";
-function ScrollView() {
+function ScrollView({ filterSelected }) {
   const [threads, setThreads] = useState([]);
   const [subreddit, setSubreddit] = useState("webdev");
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (filter) => {
       try {
-        const result = await fetch(
-          "https://www.reddit.com/r/StartledCats.json"
-        );
+        let result = null;
+        if (filter === "top") {
+          result = await fetch(
+            "https://www.reddit.com/r/StartledCats/top/.json"
+          );
+        } else if (filter === "new") {
+          result = await fetch(
+            "https://www.reddit.com/r/StartledCats/new/.json"
+          );
+        } else {
+          result = await fetch(
+            "https://www.reddit.com/r/StartledCats/hot/.json"
+          );
+        }
         const resultInJson = await result.json();
         console.log(resultInJson.data.children);
         setThreads(resultInJson.data.children);
@@ -18,8 +29,8 @@ function ScrollView() {
         console.log(e);
       }
     };
-    fetchData();
-  }, [subreddit]);
+    fetchData(filterSelected);
+  }, [filterSelected]);
 
   return (
     <div className="scrollview">

@@ -1,0 +1,46 @@
+.filterpanel {
+  display: flex;
+}
+.filterpanel-container {
+  width: 100vh;
+  background-color: white;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+button {
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: transparent;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.icon {
+  font-size: 22px;
+  color: grey;
+  background-color: transparent;
+  padding: 0 10px;
+  position: absolute;
+  margin-right: 30px;
+  /* width: 10px; */
+}
+
+p {
+  position: absolute;
+  margin-left: 30px;
+}
