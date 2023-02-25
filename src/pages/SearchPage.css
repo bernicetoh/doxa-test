@@ -1,17 +1,22 @@
 .searchpage {
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.filterpanel-container {
+.header-container {
   display: flex;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 30px;
+}
+.main-filterpanel-container {
+  display: flex;
+  position: absolute;
+  top: 190px;
 }
 .scrollview-container {
   display: flex;
+  top: 280px;
   position: absolute;
-  top: 300px;
-  left: 30px;
 }

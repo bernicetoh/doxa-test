@@ -3,12 +3,8 @@ import "./FilterPanel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFire,
-  faHandSparkles,
-  faL,
   faLongArrowAltUp,
-  faSprayCanSparkles,
   faWandMagicSparkles,
-  faWandSparkles,
 } from "@fortawesome/free-solid-svg-icons";
 
 function FilterPanel({ setSelected }) {
