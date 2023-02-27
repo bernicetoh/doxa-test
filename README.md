@@ -4,16 +4,20 @@ This project is a mock-up of the subreddit page - [r/StartledCats](https://www.r
 
 ## Quick start
 
-Download the
+### 1. Download the repository
 
-## Available Scripts
+On this page, click the arrow on the green `Code` button at the top right of the repository contents.\ From here, select Download Zip. This will download this entire GitHub repository as a zipped folder.\
 
-In the project directory, you can run:
+### 2. Locate the repository
 
-### `npm start`
+Locate the downloaded zip file and unzip its contents.\
+Open terminal and locate the unzipped file.\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Run the application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Type `npm start` into the terminal and press enter.\
+The site should be displayed in your browser.\
+
+## Troubleshoot
+
+If you encounter this error: `sh: react-scripts: command not found `, run `npm install react-scripts`.\
