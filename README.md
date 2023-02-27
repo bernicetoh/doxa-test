@@ -21,4 +21,5 @@ The site should be displayed in your browser.
 
 ## Troubleshoot
 
-If you encounter this error: `sh: react-scripts: command not found`, run `npm install react-scripts`.
+If you encounter this error: `sh: react-scripts: command not found`, type `npm install react-scripts` in your terminal and press enter.\
+You should be able run `npm start` after.
