@@ -84,3 +84,48 @@ h3 {
   padding-right: 10px;
   background-color: transparent;
 }
+
+@media screen and (max-width: 860px) {
+  .thread-container {
+    width: 90vh;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thread-container {
+    width: 65vh;
+  }
+
+  .thread-container .score-container h3 {
+    font-size: 0.8rem;
+  }
+  .created-text {
+    font-size: 0.7rem;
+  }
+  .thread-container .title {
+    font-size: 1rem;
+  }
+  .thread-container .comments-container {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .thread-container {
+    width: 40vh;
+  }
+  .thread-container .title {
+    font-size: 0.9rem;
+  }
+  .thread-container .comments-container {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+    position: absolute;
+    top: 115px;
+  }
+}

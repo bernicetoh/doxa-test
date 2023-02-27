@@ -37,3 +37,33 @@
   font-size: 20px;
   color: grey;
 }
+
+@media screen and (max-width: 860px) {
+  .threadpage .btn-container {
+    width: 90vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .threadpage .btn-container {
+    width: 65vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .threadpage {
+    width: 80%;
+  }
+  .threadpage .btn-container {
+    width: 95%;
+  }
+
+  .op-container {
+    display: flex;
+    position: relative;
+    /* width: 90%; */
+  }
+}

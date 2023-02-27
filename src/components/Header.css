@@ -21,3 +21,9 @@
   position: absolute;
   top: 80px;
 }
+
+@media screen and (max-width: 480px) {
+  .header .text-container {
+    width: 40vh;
+  }
+}

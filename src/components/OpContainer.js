@@ -62,7 +62,7 @@ function OpContainer({ thread, isUp, isDown }) {
         <p className="title">{title}</p>
         {desc ? <p className="desc-text">{desc}</p> : <div></div>}
         {mediaLink ? (
-          <video width="500" height="500" controls="controls">
+          <video controls="controls">
             <source src={mediaLink} />
           </video>
         ) : (

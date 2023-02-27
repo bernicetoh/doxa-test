@@ -20,3 +20,6 @@
   top: 280px;
   position: absolute;
 }
+body {
+  overflow-x: hidden;
+}

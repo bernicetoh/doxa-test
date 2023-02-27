@@ -53,3 +53,23 @@ button:hover {
   position: absolute;
   margin-left: 30px;
 }
+
+@media screen and (max-width: 860px) {
+  .filterpanel .filterpanel-container {
+    width: 90vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filterpanel .filterpanel-container {
+    width: 40vh;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filterpanel .filterpanel-container {
+    width: 40vh;
+    justify-content: center;
+  }
+}

@@ -35,6 +35,10 @@
   top: 85px;
 }
 
+.opcontainer video {
+  width: 500px;
+  height: 500px;
+}
 .opcontainer .score-container {
   position: relative;
   left: 5px;
@@ -45,4 +49,57 @@
   margin-top: 0px;
   font-size: 0.9rem;
   background-color: aliceblue;
+}
+
+@media screen and (max-width: 860px) {
+  .opcontainer {
+    width: 90vh;
+    background-color: antiquewhite;
+  }
+  .opcontainer video {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .opcontainer {
+    width: 65vh;
+  }
+
+  .opcontainer .title {
+    font-size: 1rem;
+  }
+  .opcontainer video {
+    width: 350px;
+    height: 350px;
+  }
+
+  .posted p {
+    font-size: 0.7rem;
+  }
+  .opcontainer .title {
+    font-size: 1rem;
+  }
+  .opcontainer .comments-container {
+    font-size: 0.7rem;
+  }
+
+  .opcontainer .score-container h3 {
+    font-size: 0.8rem;
+  }
+
+  .posted {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .opcontainer {
+    width: 50vh;
+  }
+  .opcontainer video {
+    width: 300px;
+    height: 300px;
+  }
 }
