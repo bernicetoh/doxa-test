@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function FilterPanel({ setSelected }) {
-  const [isHot, setIsHot] = useState(false);
+  const [isHot, setIsHot] = useState(true);
   const [isNew, setIsNew] = useState(false);
   const [isTop, setIsTop] = useState(false);
 

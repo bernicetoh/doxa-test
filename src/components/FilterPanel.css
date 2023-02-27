@@ -39,7 +39,7 @@ button:hover {
   background-color: lightgrey;
 }
 
-.icon {
+.filterpanel .icon {
   font-size: 22px;
   color: grey;
   background-color: transparent;

@@ -1,0 +1,48 @@
+.opcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.opcontainer .title {
+  font-size: 1.1rem;
+}
+
+.opcontainer .posted {
+  display: flex;
+}
+
+.opcontainer .postedbyon {
+  color: gray;
+}
+
+.opcontainer .subreddit-name {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.posted p {
+  font-size: 0.8rem;
+}
+
+.opcontainer .comments-container {
+  padding-top: 10px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: bold;
+  top: 85px;
+}
+
+.opcontainer .score-container {
+  position: relative;
+  left: 5px;
+}
+
+.text-container .desc-text {
+  position: relative;
+  margin-top: 0px;
+  font-size: 0.9rem;
+  background-color: aliceblue;
+}

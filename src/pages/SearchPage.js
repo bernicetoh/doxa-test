@@ -7,11 +7,6 @@ import "./SearchPage.css";
 function SearchPage() {
   const [filterSelected, setFilterSelected] = useState("");
   const [threads, setThreads] = useState([]);
-  //   const [subreddit, setSubreddit] = useState("webdev");
-
-  useEffect(() => {
-    console.log(filterSelected);
-  }, [filterSelected]);
 
   useEffect(() => {
     const fetchData = async (filter) => {
@@ -49,7 +44,7 @@ function SearchPage() {
         <FilterPanel setSelected={setFilterSelected} />
       </div>
       <div className="scrollview-container">
-        <ScrollView threads={threads} />
+        <ScrollView threads={threads} filter={filterSelected} />
       </div>
     </div>
   );
