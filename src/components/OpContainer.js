@@ -30,7 +30,6 @@ function OpContainer({ thread, isUp, isDown }) {
     try {
       const extmedia = thread.url_overridden_by_dest;
       setExternalLink(extmedia);
-      console.log(extmedia);
     } catch (e) {
       console.log("external media link not found");
     }

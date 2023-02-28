@@ -31,12 +31,6 @@ function FilterPanel({ setSelected }) {
     }
   };
 
-  useEffect(() => {
-    console.log(isHot);
-    console.log(isNew);
-    console.log(isTop);
-  }, [isHot, isNew, isTop]);
-
   return (
     <div className="filterpanel">
       <div className="filterpanel-container">

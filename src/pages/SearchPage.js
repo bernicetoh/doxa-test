@@ -26,7 +26,6 @@ function SearchPage() {
           );
         }
         const resultInJson = await result.json();
-        console.log(resultInJson.data.children);
         setThreads(resultInJson.data.children);
       } catch (e) {
         console.log(e);
