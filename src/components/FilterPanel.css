@@ -62,14 +62,14 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .filterpanel .filterpanel-container {
-    width: 40vh;
+    width: 65vh;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 480px) {
   .filterpanel .filterpanel-container {
-    width: 40vh;
+    width: 45vh;
     justify-content: center;
   }
 }

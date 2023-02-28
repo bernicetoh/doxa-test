@@ -54,16 +54,8 @@
   body {
     overflow-x: hidden;
   }
-  .threadpage {
-    width: 80%;
-  }
-  .threadpage .btn-container {
-    width: 95%;
-  }
 
-  .op-container {
-    display: flex;
-    position: relative;
-    /* width: 90%; */
+  .threadpage .btn-container {
+    width: 50vh;
   }
 }
