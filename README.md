@@ -11,7 +11,7 @@ From here, select `Download Zip`. This will download this entire GitHub reposito
 
 ### 2. Locate the repository
 
-Locate the downloaded zip file and unzip its contents.\
+Locate the downloaded zipped folder and unzip its contents.\
 Open terminal and locate the unzipped file.
 
 ### 3. Run the application
@@ -21,5 +21,5 @@ The site should be displayed in your browser.
 
 ## Troubleshoot
 
-If you encounter this error: `sh: react-scripts: command not found`, type `npm install react-scripts` in your terminal and press enter.\
+If you encounter this error: `sh: react-scripts: command not found`, type `npm install react-scripts` into your terminal and press enter.\
 You should be able run `npm start` after.
